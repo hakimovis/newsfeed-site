@@ -2,7 +2,7 @@ from django.conf.urls import patterns, url
 
 
 from newsfeed_site.apps.site import views
-
+from views import index
 urlpatterns = patterns('',
-    url(r'^$', views.HomePage.as_view(), name='home'),
+    url(r'^$', index, name='home'),
 )

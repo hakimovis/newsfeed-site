@@ -1,4 +1,12 @@
 {% extends "base.html" %}
 {% block content %}
 Welcome to my project!
+{% load pagination_tags %}
+===
+{% autopaginate news_list 10 %}
+===
+{{ news_list }}
+
+{% paginate %}
+
 {% endblock %}
